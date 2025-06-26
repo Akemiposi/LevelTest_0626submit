@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   $result = file_put_contents('data/data.txt', $line, FILE_APPEND | LOCK_EX);
 if ($result === false) {
-  echo '⚠️ ファイル書き込みに失敗しました。パーミッションまたはパスを確認してください。';
+  echo 'ファイル書き込みに失敗しました。パーミッションまたはパスを確認してください。';
   exit;
 }
 
